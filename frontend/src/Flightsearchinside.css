@@ -1,0 +1,63 @@
+/* src/FlightSearch.css */
+.flight-search-container {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #1b1d36;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav button {
+    margin: 0 10px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .user-actions button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .search-button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .promo {
+    margin-top: 50px;
+  }
+  
+  .promo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .stay-longer {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,88 @@
+openapi: 3.0.0
+info:
+  title: Feedback API
+  description: API for handling feedback submissions
+  version: 1.0.0
+paths:
+  /feedback:
+    post:
+      summary: Submit feedback
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                feedback:
+                  type: string
+                rating:
+                  type: integer
+                category:
+                  type: string
+                flightNumber:
+                  type: string
+                email:
+                  type: string
+      responses:
+        '200':
+          description: Feedback submitted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  sentiment:
+                    type: string
+  /feedback/positive:
+    get:
+      summary: Get positive feedbacks
+      responses:
+        '200':
+          description: List of positive feedbacks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    feedback:
+                      type: string
+                    rating:
+                      type: integer
+                    category:
+                      type: string
+                    flightNumber:
+                      type: string
+                    email:
+                      type: string
+  /feedback/negative:
+    get:
+      summary: Get negative feedbacks
+      responses:
+        '200':
+          description: List of negative feedbacks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    feedback:
+                      type: string
+                    rating:
+                      type: integer
+                    category:
+                      type: string
+                    flightNumber:
+                      type: string
+                    email:
+                      type: string

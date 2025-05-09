@@ -1,0 +1,92 @@
+/* src/FeedbackVisual.css */
+.feedback-visual-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    
+  }
+  
+  .header {
+    background-color: #05203c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    min-height: 70px;
+  }
+  
+  .logo {
+    font-size: 1.6em;
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+
+  .viewfeedbackbtn{
+    background-color: #05203c;
+    color: #f4f4f4;
+  }
+  
+  .nav-links .button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .nav-links .button:hover {
+    text-decoration: underline;
+  }
+  
+  .chart-section {
+    margin-top: 20px;
+  }
+  
+  .chart-section h2 {
+    color: #05203c;
+  }
+
+  .footer {
+    background-color: #05203c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 0 30px;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    margin-top: 20px;
+  }
+  

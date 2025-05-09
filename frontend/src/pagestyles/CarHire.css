@@ -1,0 +1,141 @@
+/* src/CarHire.css */
+.carhire-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .headers {
+    background-color: #05203c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .headers {
+    background-color: #05203c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-link {
+    display: flex;
+  }
+  
+  .nav-buttons {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    gap:5px;
+  }
+  
+  .nav-button.actives {
+    border-bottom: 2px solid #05203c;
+    background-color: #05203c;
+    color: white;
+  }
+  
+  .main-contents {
+    padding: 20px;
+  }
+  
+  .booking-headers {
+    color: #05203c;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-sections {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-inputs {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    max-width: 200px;
+  }
+  
+  .search-buttons {
+    background-color: #05203c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #05203c;
+  }
+  
+ 
+  .features-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .features {
+    background-color: white;
+   
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    flex: 1 0 30%;
+  }
+  
+  .top-cars-sections {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .top-cars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .car {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+  }
+  
+  .car img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .car p {
+    margin-top: 10px;
+    color: #2e8b57;
+    font-weight: bold;
+  }
+  

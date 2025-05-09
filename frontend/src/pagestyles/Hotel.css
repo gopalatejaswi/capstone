@@ -1,0 +1,120 @@
+
+.hotel-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .headers {
+    background-color: #05203c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-link {
+    display: flex;
+  }
+  
+  .nav-buttons {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    gap:5px;
+  }
+  
+  .nav-button.active {
+    border-bottom: 2px solid #05203c;
+    background-color: #05203c;
+    color: white;
+  }
+  
+  .main-contents {
+    padding: 20px;
+  }
+  
+  .booking-headers {
+    color: #05203c;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-sections {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-inputs {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    max-width: 200px;
+  }
+  
+  .search-buttons {
+    background-color: #05203c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #05203c;
+  }
+  
+  .offers-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .offers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .offer {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    flex: 1 0 60%;
+  }
+  
+  .offer img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .offer p {
+    color: #05203c;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .offer small {
+    color: #777;
+  }
+   
+
+   
