@@ -56,7 +56,7 @@ const FeedbackForm = () => {
         </nav>
       </header>
       <div className="form-box">
-        <h2 className="form-heading">Submit Your Feedback</h2>
+        <h2 className="form-heading">Your Experience</h2>
         {message && <p className="message">{message}</p>}
         <form onSubmit={onSubmit} className="feedback-form">
           <textarea

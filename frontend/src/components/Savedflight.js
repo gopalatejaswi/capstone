@@ -51,7 +51,7 @@ const SavedFlight = () => {
             {flights.map((flight) => (
               <li key={flight.id} className={getFlightStatusClass(flight.departureTime)}>
                 {flight.origin} to {flight.destination} at {flight.departureTime} | $
-                {flight.price} | Available: {flight.available ? "Yes" : "No"}
+                {/* {flight.price} | Available: {flight.available ? "Yes" : "No"} */}
               </li>
             ))}
           </ul>
@@ -60,33 +60,9 @@ const SavedFlight = () => {
           <img src="/image2.jpg" alt="Flight" className="side-image" />
         </div>
       </div>
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-column">
-            <h3>Company</h3>
-            <Link to="/">About Us</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Press</Link>
-            <Link to="/">Affiliate Program</Link>
-          </div>
-          <div className="footer-column">
-            <h3>Trips</h3>
-            <Link to="/">Travel Guides</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Flight Booking</Link>
-            <Link to="/">Travel Insurance</Link>
-          </div>
-          <div className="footer-column">
-            <h3>International Sites</h3>
-            <Link to="/">France</Link>
-            <Link to="/">Germany</Link>
-            <Link to="/">Spain</Link>
-            <Link to="/">Italy</Link>
-          </div>
-        </div>
-        <p>&copy; 2025 JetVoyage. All rights reserved.</p>
-      </footer>
+      
     </div>
+    
   );
 };
 

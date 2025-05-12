@@ -13,7 +13,7 @@ public class Flight {
     private String destination;
     private String departureTime;
     private double price;
-    private boolean available;
+    private String available;
  
     // Getters and Setters
     public Long getId() { return id; }
@@ -31,7 +31,7 @@ public class Flight {
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
  
-    public boolean isAvailable() { return available; }
-    public void setAvailable(boolean available) { this.available = available; }
+    public String isAvailable() { return available; }
+    public void setAvailable(String available) { this.available = available; }
 }
  

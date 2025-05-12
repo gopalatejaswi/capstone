@@ -34,6 +34,12 @@ const Flightsearchinside = () => {
     });
   };
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    // Navigate to ViewFlight with query parameters for origin and destination
+    navigate(`/viewflight?origin=${formData.origin}&destination=${formData.destination}`);
+  };
+
   const fetchFlights = async () => {
     try {
       const response = await axios.get('http://localhost:2000/flights');
@@ -94,14 +100,14 @@ const Flightsearchinside = () => {
         <main className="search-section">
           <h2 className="headline">Millions of cheap flights. One simple search.</h2>
           <h4 className="headline">To Search Flight For Booking</h4>
-          <form className="search-form" onSubmit={handleBook}>
-            <input type="text" className="buttonsearch" placeholder="Available" name="available" value={formData.available} onChange={handleChange} />
+          <form className="search-form" onSubmit={handleSearch}>
+            <input type="text" className="buttonsearch" placeholder="Type" name="available" value={formData.available} onChange={handleChange} />
             <input type="date" className="buttonsearch" name="departureTime" value={formData.departureTime} onChange={handleChange} />
             <input type="text" className="buttonsearch" placeholder="Origin" name="origin" value={formData.origin} onChange={handleChange} />
             <input type="text" className="buttonsearch" placeholder="Destination" name="destination" value={formData.destination} onChange={handleChange} />
             <input type="number" className="buttonsearch" placeholder="Price" name="price" value={formData.price} onChange={handleChange} />
             
-            <button type="submit" className="buttonbutton">Book</button>
+            <button type="submit" className="buttonbutton" onClick={() => navigate('/ViewFlight')}>Search</button>
           </form>
           {/* <ul>
             {flights.map((flight, index) => (
@@ -154,3 +160,67 @@ const Flightsearchinside = () => {
 };
 
 export default Flightsearchinside;
+
+
+// import React, { useState } from 'react';
+// import { useNavigate , Link } from 'react-router-dom';
+// import './FlightSearch.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPlane, faHeart } from '@fortawesome/free-solid-svg-icons';
+
+// const Flightsearchinside = () => {
+//   const [formData, setFormData] = useState({
+//     origin: '',
+//     destination: '',
+//     departureTime: '',
+//     price: ''
+//   });
+//   const navigate = useNavigate();
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({
+//       ...formData,
+//       [name]: value,
+//     });
+//   };
+
+  // const handleSearch = (e) => {
+  //   e.preventDefault();
+  //   // Navigate to ViewFlight with query parameters for origin and destination
+  //   navigate(`/viewflight?origin=${formData.origin}&destination=${formData.destination}`);
+  // };
+
+//   return (
+//     <div className="flight-search-container">
+//       <header className="header">
+//         <h1 className="logo">
+//           <FontAwesomeIcon icon={faPlane} className="logo-icon" />
+//           JetVoyage
+//         </h1>
+//         <div className="user-actions">
+//           <FontAwesomeIcon icon={faHeart} className="heart-icon" onClick={() => navigate('/saved')} />
+//           <Link to="/login" className="button login-button">Log out</Link>
+//         </div>
+//         <nav className="nav-buttons">
+//           <button className="buttons">Flights</button>
+//           <button className="button" onClick={() => navigate('/hotel')}>Hotels</button>
+//           <button className="button" onClick={() => navigate('/carhire')}>Car hire</button>
+//         </nav>
+//       </header>
+//       <main className="search-section">
+//         <h2 className="headline">Millions of cheap flights. One simple search.</h2>
+//         <form className="search-form" onSubmit={handleSearch}>
+//           <input type="text" className="buttonsearch" placeholder="Origin" name="origin" value={formData.origin} onChange={handleChange} />
+//           <input type="text" className="buttonsearch" placeholder="Destination" name="destination" value={formData.destination} onChange={handleChange} />
+//           <input type="date" className="buttonsearch" name="departureTime" value={formData.departureTime} onChange={handleChange} />
+//           <input type="number" className="buttonsearch" placeholder="Price" name="price" value={formData.price} onChange={handleChange} />
+//           <button type="submit" className="buttonbutton">Search</button>
+//         </form>
+//       </main>
+//     </div>
+//   );
+// };
+
+// export default Flightsearchinside;
+

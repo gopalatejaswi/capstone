@@ -74,7 +74,7 @@ function FlightForm() {
             <h2>Add Flight</h2>
             <form onSubmit={handleSubmit}>
               <label className="checkbox-label">
-                Available:
+                Type:
                 <input
                   type="checkbox"
                   name="available"

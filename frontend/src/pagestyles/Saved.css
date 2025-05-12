@@ -24,6 +24,11 @@
     padding: 20px;
   }
   
+  .side-image{
+    width: 200%;
+    height:500px;
+  }
+
   .flights-section h3 {
     color: #05203c;
     margin-bottom: 20px;
