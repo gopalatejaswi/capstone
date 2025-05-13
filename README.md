@@ -43,24 +43,39 @@ The system architecture consists of the following main components:
 - **FlightSearchInside Component**: Manages booking processes and displays detailed flight options.
 - **SavedFlight Component**: Enables users to save preferred flights for later viewing.
 
+  ![image](https://github.com/user-attachments/assets/fadac687-3f69-4137-a276-c52bc0e8b5ee)
+
+
 ### Authentication Service (Node.js)
 
 - **Login Component**: Handles user authentication using MongoDB for credential storage.
 - **Register Component**: Facilitates new user registration and data storage in MongoDB.
+
+  ![image](https://github.com/user-attachments/assets/c0aa429e-1222-42ac-923e-064947c08385)
+
 
 ### Booking Service (Spring Boot)
 
 - **Flight Entity & Repository**: Structures flight data and provides CRUD operations.
 - **Flight Controller**: Offers RESTful endpoints for managing flight data.
 
+![image](https://github.com/user-attachments/assets/05f4f578-cf8e-4d1e-91c2-2ba8d5ee03c1)
+
+
 ### Feedback Service (Python)
 
 - **Feedback Collection**: Gathers user feedback, storing it in an SQLite database.
 - **Feedback Analysis**: Analyzes feedback to extract insights and improve service.
 
+  
+![image](https://github.com/user-attachments/assets/7c0c0f8b-e3c5-4328-a798-2846827777c9)
+
+
 ### Service Registry
 
 - Set up using Express and body-parser to register and manage services.
+  ![image](https://github.com/user-attachments/assets/b4fd0eb9-e10d-493c-9f14-e77e201e1f17)
+
 
 ## Deployment
 
