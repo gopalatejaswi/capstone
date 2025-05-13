@@ -32,6 +32,9 @@ The system architecture consists of the following main components:
 3. **Booking Service**: Spring Boot application managing flight bookings with H2 Database.
 4. **Feedback Service**: Python application for collecting and analyzing feedback.
 
+   ![image](https://github.com/user-attachments/assets/3fabe014-095c-4483-91d4-182abb085848)
+
+
 ## Microservices Details
 
 ### Frontend (React.js)
