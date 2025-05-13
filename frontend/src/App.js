@@ -15,6 +15,7 @@ import Hotel from './components/Hotel';
 import CarHire from './components/CarHire';
 import Savedflight from './components/Savedflight';
 import ViewFlight from './components/ViewFlight';
+import Payment from './components/Payment';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/carhire" element={<CarHire />} />
           <Route path="/Saved" element={<Savedflight />} />
           <Route path="/ViewFlight" element={<ViewFlight />} />
+          <Route path="/Payment" element={<Payment />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>

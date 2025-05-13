@@ -1,0 +1,121 @@
+.payment-container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header- {
+  background-color: #05203c;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 100px;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.nav-links- {
+  display: flex;
+}
+
+.nav-button- {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.payment-form- {
+  background-color: white;
+  width: 80%;
+  max-width: 1300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+.payment-div {
+  display: flex;
+  flex-direction: column; /* Change to column to stack label and input vertically */
+  margin-bottom: 15px; /* Add space between each label-input pair */
+}
+
+.form-section- {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-details-, .billing-address- {
+  width: 48%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+}
+
+.labelclass {
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.inputclass, .selectname {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.terms1 {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.purchase-button- {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 20px;
+  align-self: flex-end;
+}
+
+.purchase-button:hover {
+  background-color: #1f6651;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .form-section {
+    flex-direction: column;
+  }
+
+  .card-details-, .billing-address- {
+    width: 100%;
+  }
+}

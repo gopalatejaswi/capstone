@@ -353,3 +353,8 @@ INSERT INTO flight (
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-05-12 20:29:18.109484+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PAYMENT_DETAILS \000d\000a\000d\000adelete [*]from payment_details where address1=null"; SQL statement:
+SELECT * FROM PAYMENT_DETAILS 
+
+delete from payment_details where address1=null [42000-232]

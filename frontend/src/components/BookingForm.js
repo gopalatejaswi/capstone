@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../pagestyles/BookingForm.css"; // Import the CSS file
@@ -108,7 +107,7 @@ function BookingForm() {
               <button
                 type="submit"
                 className="submit-btn"
-                onClick={() => navigate('/feedback')}
+                onClick={() => navigate('/payment')}
               >
                 Book Flight
               </button>

@@ -1,12 +1,7 @@
-
-
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../pagestyles/Login.css'; // Import the CSS for styling
-import { useNavigate,Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlane } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate} from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });

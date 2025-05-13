@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import '../pagestyles/Hotel.css'; // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

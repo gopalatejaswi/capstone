@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react';
 import '../pagestyles/Feedback.css'; // Import the CSS file for styling
 import { useNavigate, Link } from 'react-router-dom';

@@ -1,8 +1,4 @@
-
-// src/FlightSearch.js
-//import React from 'react';
 import './FlightSearch.css';
-
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlane } from '@fortawesome/free-solid-svg-icons';

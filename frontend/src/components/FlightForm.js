@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, Link } from 'react-router-dom';
@@ -63,9 +61,9 @@ function FlightForm() {
             JetVoyage
           </h1>
         <nav className="nav-links">
-          <button className="button">Flights</button>
-          <button className="button">Hotels</button>
-          <button className="button">Car hire</button>
+          <button className="button" onClick={() => navigate('/flightsearchinside')}>Flights</button>
+          <button className="button" onClick={() => navigate('/hotel')}>Hotels</button>
+          <button className="button" onClick={() => navigate('/carhire')}>Car hire</button>
         </nav>
       </header>
       <div className="content">
@@ -119,9 +117,9 @@ function FlightForm() {
               <button
                 type="submit"
                 className="submit-btn"
-                onClick={() => navigate('/booking')}
+                
               >
-                Booking
+                Add
               </button>
             </form>
           </div>
